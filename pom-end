@@ -1,0 +1,31 @@
+	</modules>
+	<packaging>pom</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-help-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>effective-pom</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>effective-pom</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.10</version>
+		</dependency>
+	</dependencies>
+
+</project>

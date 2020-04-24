@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.example</groupId>
+	<artifactId>parallel-testbed</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<modules>
+		<module>child1</module>
+<module>child2</module> <module>child3</module> <module>child4</module> <module>child5</module> <module>child6</module> <module>child7</module> <module>child8</module> <module>child9</module> <module>child10</module> <module>child11</module> <module>child12</module> <module>child13</module> <module>child14</module> <module>child15</module> <module>child16</module> <module>child17</module> <module>child18</module> <module>child19</module> <module>child20</module>
+	</modules>
+	<packaging>pom</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-help-plugin</artifactId>
+				<version>3.1.0</version>
+				<executions>
+					<execution>
+						<id>effective-pom</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>effective-pom</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.10</version>
+		</dependency>
+	</dependencies>
+
+</project>
